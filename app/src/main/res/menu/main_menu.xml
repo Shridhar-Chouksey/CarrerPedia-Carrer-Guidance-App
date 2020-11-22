@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="More Apps"
+        android:icon="@drawable/ic_more"
+        android:id="@+id/more">
+    </item>
+
+    <item
+    android:title="Rate Us"
+    android:icon="@drawable/ic_rate"
+    android:id="@+id/rate">
+</item>
+
+    <item
+        android:title="Privacy Policy"
+        android:icon="@drawable/ic_privacypolicy"
+        android:id="@+id/privacypolicy">
+    </item>
+
+    <item
+        android:title="Share Us"
+        android:icon="@drawable/ic_shareus"
+        android:id="@+id/shareus">
+    </item>
+
+
+</menu>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">CarrerPedia</string>
+    <string name="a_career_in_civil_services_gives_you_the_opportunity_to_participate_in_governance_and_making_important_policy_decisions_for_the_country_there_is_immense_prestige_and_power_attached_to_the_services_and_one_travels_the_lengths_and_breadths_of_the_country_meeting_different_types_of_people_often_listening_to_their_problems_and_come_up_with_solutions_to_resolve_those_problems_thus_it_has_immense_opportunities_to_fulfil_desire_to_provide_social_service_to_people_in_need_and_serving_your_country_entry_to_these_are_based_on_one_of_the_toughest_exams_conducted_by_the_union_public_service_commission_string">A career in civil services gives you the opportunity to participate in governance and making important policy decisions for the country. There is immense prestige and power attached to the services and one travels the lengths and breadths of the country meeting different types of people often listening to their problems and come up with solutions to resolve those problems. Thus, it has immense opportunities to fulfil desire to provide social service to people in need and serving your country. Entry to these are based on one of the toughest exams conducted by the Union Public Service Commission.</string>
+
+    <string name="paragraph">
+        <p>A career in civil services gives you the opportunity to participate
+        in governance and making important policy decisions for the country. There is immense prestige and
+        power attached to the services and one travels the lengths and breadths of the country meeting different
+        types of people often listening to their problems and come up with solutions to resolve those problems.
+        Thus, it has immense opportunities to fulfil desire to provide social service to people in need and
+        serving your country. Entry to these are based on one of the toughest exams conducted by the Union
+            Public Service Commission</p>
+     \n\n
+    The UPSC exam pattern for the Preliminary stage consists of two papers, conducted on one day. Both the papers
+        comprise objective type questions with multiple choice of answers.
+     \n\n
+        The prelims examination is a qualifying stage to filter candidates for the mains exam.
+        The marks secured at this stage are not counted towards the final merit list, though candidates
+        have to prepare well for this exam as cut-offs are unpredictable and depend on the average score every year.
+\n\n
+
+    </string>
+    <string name="civil_services_as_a_carrer">CIVIL SERVICES AS A CARRER</string>
+    <string name="close" />
+    <string name="open" />
+
+</resources>

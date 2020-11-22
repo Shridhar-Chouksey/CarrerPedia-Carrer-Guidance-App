@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "213742340754",
+    "firebase_url": "https://carrerpedia.firebaseio.com",
+    "project_id": "carrerpedia",
+    "storage_bucket": "carrerpedia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213742340754:android:3e16a9b463aefaebbb744b",
+        "android_client_info": {
+          "package_name": "com.example.carrerpedia.activities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213742340754-5u80cm5l65g9u3m1n2f4uat50kgotmsl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.carrerpedia.activities",
+            "certificate_hash": "e1f0dd8cde15f240cab0944e287dce2c9d752ab4"
+          }
+        },
+        {
+          "client_id": "213742340754-gijme35jfvo9qmnkh0j2ir8id8ampoq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRjRJ6_KpHAANXYhe2JmXGF_ATIuQTFs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213742340754-gijme35jfvo9qmnkh0j2ir8id8ampoq0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
