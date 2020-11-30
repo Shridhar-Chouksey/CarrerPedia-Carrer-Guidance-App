@@ -11,7 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.Privacy" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".activities.ComputerEngineerActivity"></activity>
+        <activity android:name=".activities.EngineeringAsCareer" />
+        <activity android:name=".activities.LawActivity" />
+        <activity android:name=".activities.CommerceActivity" />
+        <activity android:name=".activities.MedicalActivity" />
+        <activity android:name=".activities.Engineering" />
+        <activity android:name=".activities.ThemeActivity" />
+        <activity
+            android:name=".activities.Privacy"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name=".activities.CivilServicesAsCarrer" />
         <activity android:name=".activities.IFoSchosenActivity" />
         <activity android:name=".activities.IPSchosenActivity" />

@@ -4,10 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
+import androidx.appcompat.widget.SearchView;
 import android.widget.Toast;
 
 import com.example.carrerpedia.R;
@@ -18,16 +22,20 @@ import static java.util.Arrays.asList;
 
 public class CivilServices extends AppCompatActivity {
 
-
+    SearchView searchbar;
+//    EditText searchlistviewET;
+    ArrayAdapter<String> civilservicesAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_civil_services);
 
+//          searchlistviewET=findViewById(R.id.searchlistviewET);
+          searchbar=(SearchView)findViewById(R.id.search_bar);
         ListView civilservicesListView= findViewById(R.id.civilserviceslist);
 
         final ArrayList<String> civilserviceslistarray=new ArrayList<String>(asList(
-                "CIVIL SERVICES AS A CARRER",
+                "Civil Services as a Career",
                 "Indian Administrative Service (IAS)",
                 "Indian Police Service (IPS)",
                 "Indian Forest Service (IFoS)",
@@ -55,7 +63,7 @@ public class CivilServices extends AppCompatActivity {
 
 
 
-        ArrayAdapter<String> civilservicesAdapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,civilserviceslistarray);
+         civilservicesAdapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,civilserviceslistarray);
 
         civilservicesListView.setAdapter(civilservicesAdapter);
 
@@ -88,6 +96,20 @@ public class CivilServices extends AppCompatActivity {
             }
         });
 
+
+      searchbar.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+          @Override
+          public boolean onQueryTextSubmit(String query) {
+              CivilServices.this.civilservicesAdapter.getFilter().filter(query);
+              return false;
+          }
+
+          @Override
+          public boolean onQueryTextChange(String newText) {
+              CivilServices.this.civilservicesAdapter.getFilter().filter(newText);
+              return false;
+          }
+      });
 
     }
 }

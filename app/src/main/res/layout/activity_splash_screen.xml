@@ -17,9 +17,10 @@
         <ImageView
             android:layout_width="425dp"
             android:layout_height="963dp"
-            android:src="@drawable/carrerpedialogo">
+            android:src="@drawable/careerpedialogonew">
 
         </ImageView>
+
 
 
     </LinearLayout>

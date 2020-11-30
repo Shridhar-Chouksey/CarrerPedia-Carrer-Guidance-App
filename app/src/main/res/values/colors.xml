@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimary">#6C63FF</color>
+    <color name="colorPrimaryDark">#6C63FF</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="yellow">#02C7FA</color>
+
+    <color name="mainText">#000000</color>
+    <color name="mainBackground">#ffffff</color>
+    <color name="buttonbackground">#000000</color>
+    <color name="buttontextcolor">#ffffff</color>  //white
+    <color name="themesheadingcolor">#000000</color>
+    <color name="dashboardbackground">@android:color/holo_blue_bright</color>
+    <color name="navigationbackground">#87ecfa</color>
+
 </resources>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="250dp"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@android:color/holo_orange_light">
+    android:background="#8ff046">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:background="@drawable/logosmall">
+        android:layout_height="170dp"
+        android:background="@drawable/careerpedialogonew">
 
     </ImageView>
 

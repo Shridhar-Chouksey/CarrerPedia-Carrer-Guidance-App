@@ -25,7 +25,7 @@ import java.util.List;
 public class DashBoard extends AppCompatActivity {
 
     List<SlideModel> slideModelList1;
-    ImageSlider imageSlider1,imageSlider2,imageSlider3,imageSlider4;
+    ImageSlider imageSlider1,imageSlider2,imageSlider3,imageSlider4,imageSlider5;
 
     NavigationView navigationView;
     DrawerLayout drawerLayout;
@@ -40,6 +40,7 @@ public class DashBoard extends AppCompatActivity {
         imageSlider2=(ImageSlider)findViewById(R.id.image_slider2);
         imageSlider3=(ImageSlider)findViewById(R.id.image_slider3);
         imageSlider4=(ImageSlider)findViewById(R.id.image_slider4);
+        imageSlider5=(ImageSlider)findViewById(R.id.image_slider5);
 
         addImages();
 
@@ -90,6 +91,13 @@ public class DashBoard extends AppCompatActivity {
                         startActivity(intent);
                         break;
 
+
+                    case R.id.theme:
+
+                        startActivity(new Intent(DashBoard.this,ThemeActivity.class));
+                        break;
+
+
                     case R.id.shareus:
 
                         Intent shareIntent =   new Intent(android.content.Intent.ACTION_SEND);
@@ -118,31 +126,68 @@ public class DashBoard extends AppCompatActivity {
 
         slideModelList1=new ArrayList<>();           //made the list as dynamic, now it can take any no of images
 
-         slideModelList1.add(new SlideModel(R.drawable.upsc,"Govt Services", ScaleTypes.FIT));       // Rule: Image,Title,Scale
+         slideModelList1.add(new SlideModel(R.drawable.upscnew,"Govt Services", ScaleTypes.FIT));       // Rule: Image,Title,Scale
          slideModelList1.add(new SlideModel(R.drawable.iasips,"Govt Services", ScaleTypes.FIT));
-         slideModelList1.add(new SlideModel(R.drawable.carrerguide,"Confused about Carrer? CarrerPedia is the solution", ScaleTypes.FIT));
+         slideModelList1.add(new SlideModel(R.drawable.carrerguide,"Confused about Career? CareerPedia is the solution", ScaleTypes.FIT));
          imageSlider1.setImageList(slideModelList1,ScaleTypes.FIT);
 
          slideModelList1=new ArrayList<>();
-         slideModelList1.add(new SlideModel(R.drawable.eng3,"Engineering as a Carrer Opportunity",ScaleTypes.FIT));
-         slideModelList1.add(new SlideModel(R.drawable.eng,"Engineering as a Carrer Opportunity",ScaleTypes.FIT));
-         slideModelList1.add(new SlideModel(R.drawable.eng1,"Confused about Carrer? CarrerPedia is the solution",ScaleTypes.FIT));
-
+         slideModelList1.add(new SlideModel(R.drawable.eng3,"Engineering as a Career Opportunity",ScaleTypes.FIT));
+         slideModelList1.add(new SlideModel(R.drawable.eng2new,"Engineering as a Career Opportunity",ScaleTypes.FIT));
+         slideModelList1.add(new SlideModel(R.drawable.eng1,"Confused about Career? CareerPedia is the solution",ScaleTypes.FIT));
          imageSlider2.setImageList(slideModelList1,ScaleTypes.FIT);
-    }
+
+         slideModelList1=new ArrayList<>();
+         slideModelList1.add(new SlideModel(R.drawable.doctornew,"Medical as a Career Opportunity",ScaleTypes.FIT));
+         slideModelList1.add(new SlideModel(R.drawable.doctor2,"Medical as a Career Opportunity",ScaleTypes.FIT));
+         slideModelList1.add(new SlideModel(R.drawable.doctor3,"Medical as a Career Opportunity",ScaleTypes.FIT));
+         imageSlider3.setImageList(slideModelList1,ScaleTypes.FIT);
+
+         slideModelList1=new ArrayList<>();
+         slideModelList1.add(new SlideModel(R.drawable.commerce2,"Commerce as a Career Opportunity",ScaleTypes.FIT));
+         slideModelList1.add(new SlideModel(R.drawable.commerce,"Commerce as a Career Opportunity",ScaleTypes.FIT));
+         slideModelList1.add(new SlideModel(R.drawable.commerce3,"Commerce as a Career Opportunity",ScaleTypes.FIT));
+         imageSlider4.setImageList(slideModelList1,ScaleTypes.FIT);
+
+         slideModelList1=new ArrayList<>();
+         slideModelList1.add(new SlideModel(R.drawable.law,"Law as a Career Opportunity",ScaleTypes.FIT));
+         slideModelList1.add(new SlideModel(R.drawable.law2,"Law as a Career Opportunity",ScaleTypes.FIT));
+         slideModelList1.add(new SlideModel(R.drawable.law3,"Law a Career Opportunity",ScaleTypes.FIT));
+         imageSlider5.setImageList(slideModelList1,ScaleTypes.FIT);
+
+
+
+
+
+
+
+     }
 
     public void ViewChoices(View view) {
-//        Intent intent=new Intent(DashBoard.this,MainActivity.class);
+
 
         switch (view.getId()){
 
             case R.id.civilservicesbtn:
-//                intent.putExtra("condition",1);
+
                 Intent intent=new Intent(DashBoard.this,CivilServices.class);
                 startActivity(intent);
                 break;
+
             case R.id.engineerbtn:
-//                intent.putExtra("condition",2);
+                   startActivity(new Intent(DashBoard.this,Engineering.class));
+                break;
+
+            case R.id.medicalbtn:
+                startActivity(new Intent(DashBoard.this,MedicalActivity.class));
+                break;
+
+            case R.id.commercebtn:
+                startActivity(new Intent(DashBoard.this,CommerceActivity.class));
+                break;
+
+            case R.id.lawbtn:
+                startActivity(new Intent(DashBoard.this,LawActivity.class));
                 break;
 
         }

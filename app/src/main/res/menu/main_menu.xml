@@ -19,10 +19,23 @@
     </item>
 
     <item
+        android:title="Theme"
+        android:icon="@drawable/nightmode"
+        android:id="@+id/theme">
+    </item>
+
+    <item
         android:title="Share Us"
         android:icon="@drawable/ic_shareus"
         android:id="@+id/shareus">
     </item>
+
+    <item
+        android:title="Logout"
+        android:icon="@drawable/logout"
+        android:id="@+id/logout">
+    </item>
+
 
 
 </menu>

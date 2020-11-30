@@ -67,9 +67,9 @@ import com.google.firebase.auth.GoogleAuthProvider;
 
         loginbtn.setOnClickListener(this);
         signUpText.setOnClickListener(this);
-        SignInButton signInButton =(SignInButton) findViewById(R.id.sign_in_button);
+//        SignInButton signInButton =(SignInButton) findViewById(R.id.sign_in_button);
         mAuth = FirebaseAuth.getInstance();
-        progressBar = findViewById(R.id.progressBar);
+//        progressBar = findViewById(R.id.progressBar);
 
 
         //These 3 lines of code will check if the user is already logged in,then login the user and go directly to dashboard
@@ -85,14 +85,14 @@ import com.google.firebase.auth.GoogleAuthProvider;
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
 
-        signInButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                        signIn();
-
-            }
-        });
+//        signInButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                        signIn();
+//
+//            }
+//        });
 
 
 
